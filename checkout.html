@@ -20,8 +20,8 @@
   Sign Up with Grow For Me for the opportunity to invest in new farms, manage and monitor old farms. " />
   <meta name="keywords" content=" Grow For Me, Grow, growth, farm, sponsorship, sponsor, sponsoring, invest, investing, farming,
   crop, africa, ghana, nigeria, india, agriculture, green technology " />
-  <meta name="subject" content="AgriWeb">
-  <meta name="copyright" content="Agriweb">
+  <meta name="subject" content="AgriVestAfrica">
+  <meta name="copyright" content="AgriVestAfrica">
   <link rel="shortcut icon" href="img/cocoa-pods-with-cocoa-leaf-white_41471-6709.webp" />
 
   <script data-cfasync="false">
@@ -132,7 +132,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar justify-content-center">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <strong>AgriWeb</strong>
+          <strong>AgriVestAfrica</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
           aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
@@ -231,47 +231,75 @@
           <div class="card-body card-body-cascade">
             <p class="font-weight-bold text-center">Farm Details</p>
             <!--Grid column-->
-            <div class=" mb-4">
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-12">
 
-              <!--lastName-->
-              <label for="lastName" class="">Crop Schedule</label>
-              <input type="text" id="lastName" class="form-control">
-
+                <label for="country">Choose Farm Partners</label>
+                <select class="custom-select d-block w-100" id="country" required>
+                  <option value="">select Partners</option>
+                  <option>Northen Region Maize Farm</option>
+                  <option>Upper East Region Maize</option>
+                </select>
+              </div>
+              <!--Grid column-->
             </div>
+            <br>
             <!--Grid column-->
             <!--Grid column-->
             <div class=" mb-4">
 
               <!--lastName-->
-              <label for="lastName" class="">Name Your Farm</label>
+              <label for="lastName" class="">Expected Farm Schedule</label>
               <input type="text" id="lastName" class="form-control">
 
             </div>
+
+            <div class="form-row mb-4">
+              <div class="col">
+                <!-- First name -->
+                <input type="number" id="defaultRegisterFormNUmberOfUnits" class="form-control"
+                  placeholder="No of units">
+              </div>
+              <div class="col">
+                <!-- Last name -->
+                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="1/8 of land">
+              </div>
+            </div>
+
             <div class=" mb-4">
 
               <!--lastName-->
-              <label for="lastName" class="">*Crop</label>
+              <label for="lastName" class="">Preferred Name For Your Farm</label>
               <input type="text" id="lastName" class="form-control">
 
             </div>
+
             <!--Grid column-->
             <!--Grid row-->
             <div class="row">
               <!--Grid column-->
               <div class="col-lg-12">
-
                 <label for="country">Harvest Proceeds as:</label>
                 <select class="custom-select d-block w-100" id="country" required>
                   <option value="">select harvest type</option>
                   <option>cash</option>
                   <option>crop</option>
+                  <option>Roll On to Trade</option>
                 </select>
-                <div class="invalid-feedback">
-                  Please select a valid country.
-                </div>
-
               </div>
-              <!--Grid column-->
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-lg-12">
+
+                <div class=" mb-4">
+                  <!--lastName-->
+                  <label for="lastName" class="">Your Email Address</label>
+                  <input type="text" id="lastName" class="form-control">
+                </div>
+                <!--Grid column-->
+              </div>
             </div>
             <!--Material textarea-->
             <div class="md-form md-outline mb-3">
@@ -293,15 +321,7 @@
             <p class="font-weight-bold text-center">Farm Financial Summary</p>
             <div class="container my-5 py-3 z-depth-1 rounded">
               <div class="row">
-                <div class="col-lg-8 col-md-6 mb-4">
 
-                  <label class="green-text">No of units</label>
-                  <input type="number" class="form-control" id="zip" placeholder="" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid figure.
-                  </div>
-
-                </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
@@ -310,7 +330,7 @@
                   <label class="green-text"> Total Cost</label>
                   <br>
                   <td class="font-weight-bold">
-                    <strong>GH 6500</strong>
+                    <strong>GH₵ 6500</strong>
                   </td>
 
                 </div>
@@ -347,7 +367,7 @@
                   <label class="green-text">+service charge</label>
                   <br>
                   <td class="font-weight-bold">
-                    <strong> Gh 7150.00</strong>
+                    <strong> GH₵ 7150.00</strong>
                   </td>
 
                 </div>
@@ -365,54 +385,161 @@
               </div>
               <hr>
               <div class="alert alert-success" role="alert">
-                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates unde soluta aperiam, est, animi maxime dolor doloribus, vitae nostrum id ipsa earum aspernatur ipsam voluptatum asperiores nobis at porro libero!.</p>
+                <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates unde soluta
+                  aperiam, est, animi maxime dolor doloribus, vitae nostrum id ipsa earum aspernatur ipsam voluptatum
+                  asperiores nobis at porro libero!.</p>
               </div>
-              <p class="text-center font-weight-bold">Pay Via</p>
-              <div class="row">
-                <div class="col-md-4 mb-3">
-                  <div class="mb-2">
-                    <input iname="group2" type="radio" class="form-check-input with-gap" id="radioWithGap5"
-                      required>
-                    <label class="form-check-label" for="radioWithGap5">Momo</label>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="mb-2">
-                    <input iname="group2" type="radio" class="form-check-input with-gap" id="radioWithGap5"
-                      required>
-                    <label class="form-check-label" for="radioWithGap5">Card</label>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                  <div class="mb-2">
-                    <input iname="group2" type="radio" class="form-check-input with-gap" id="radioWithGap5"
-                      required>
-                    <label class="form-check-label" for="radioWithGap5">Direct </label>
-                  </div>
-                </div>
-                
-              </div>
+              <br>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="materialUnchecked">
-                <label class="form-check-label" for="materialUnchecked">Agree to all our <a
-                        href="">Terms</a> and <a href="">Conditions</a></label>
-            </div>
+                <label class="form-check-label" for="materialUnchecked">Agree to all our <a href="">Terms</a> and <a
+                    href="">Conditions</a></label>
+              </div>
+              <br>
+              <hr>
+              <p class="text-center font-weight-bold">Pay Via</p>
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- Button trigger modal -->
+               
+                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm"><small>Card</small></button></div>
+
+                <!-- Central Modal Small -->
+                <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+
+                  <!-- Change class .modal-sm to change the size of the modal -->
+                  <div class="modal-dialog modal-sm" role="document">
+
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h6 class="modal-title w-100 font-weight-bold" id="myModalLabel"><center>Pay With Card</center></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="md-form">
+                          <input type="text" id="Form-CompanyName" class="form-control">
+                          <label for="Form-CompanyName">Name on Card</label>
+                      </div>
+                      <div class="md-form">
+                          <input type="text" id="Form-FullName" class="form-control">
+                          <label for="Form-FullName">Email Address</label>
+                      </div>
+                      <div class="md-form">
+                        <input type="text" id="Form-Entercardnumber" class="form-control">
+                        <label for="Form-Entercardnumber">Enter card number <i class="fab fa-cc-visa fa-lg text-primary pe-2"></i><i class="fab fa-cc-mastercard fa-lg text-primary text-dark pe-2"></i></label>
+                    </div>
+                      <div class="form-row mb-4">
+                        <div class="col">
+                          <!-- First name -->
+                          <input type="text" id="defaultRegisterFormdate" class="form-control"
+                            placeholder="MM/YY">
+                        </div>
+                        <div class="col">
+                          <!-- Last name -->
+                          <input type="text" id="defaultRegistercvc" class="form-control" placeholder="CVC">
+                        </div>
+                      </div>
+                      <div class="md-form">
+                        <input type="text" id="Form-country" class="form-control">
+                        <label for="Form-country">Country or region</label>
+                    </div>
+                    <div class="md-form">
+                      <input type="text" id="Form-FullName" class="form-control">
+                      <label for="Form-Zip">Zip</label>
+                  </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success btn-sm">Pay Here</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Central Modal Small -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Button trigger modal -->
+               
+                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm-1"><small>Momo</small></button></div>
+
+                <!-- Central Modal Small -->
+                <div class="modal fade" id="centralModalSm-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+
+                  <!-- Change class .modal-sm to change the size of the modal -->
+                  <div class="modal-dialog modal-sm-1" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h6 class="modal-title w-100" id="myModalLabel11">Our Momo Details</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6 class="text-center"><small>Name of Account:Mamani Wumpini</small></h6>
+                        <h6 class="text-center"><small>Account Number:0000004555</small></h6>
+                        <br>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Central Modal Small -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Button trigger modal -->
+               
+                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm"><small>Direct</small></button></div>
+
+                <!-- Central Modal Small -->
+                <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                  aria-hidden="true">
+
+                  <!-- Change class .modal-sm to change the size of the modal -->
+                  <div class="modal-dialog modal-sm" role="document">
+
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Central Modal Small -->
+                </div>
+              </div>
+              <br>
+              <br>
+              
             </div>
             <!-- /.Shopping Cart table -->
           </div>
         </div>
       </div>
       <!-- Grid column -->
-     
+
     </div>
-    <button class="btn rgba-gradient1 btn-lg btn-block white-text" type="submit">Pay Here</button>
 
 
   </section>
   <!--Section: Content-->
-<br>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
 
 
 
@@ -444,6 +571,7 @@
     AOS.init({
       duration: 1200,
     })
+
 
   </script>
 
