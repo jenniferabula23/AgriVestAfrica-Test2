@@ -319,7 +319,7 @@
           <!-- Card content -->
           <div class="card-body card-body-cascade">
             <p class="font-weight-bold text-center">Farm Financial Summary</p>
-            <div class="container my-5 py-3 z-depth-1 rounded">
+            <div class="container my-5 py-3  rounded">
               <div class="row">
 
                 <!--Grid column-->
@@ -402,7 +402,7 @@
                 <div class="col-md-4">
                   <!-- Button trigger modal -->
                
-                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm"><small>Card</small></button></div>
+                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm"><small><img src="img/download-removebg-preview.png" alt="" height="30px" width="60px"></small></button></div>
 
                 <!-- Central Modal Small -->
                 <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -463,7 +463,7 @@
                 <div class="col-md-4">
                   <!-- Button trigger modal -->
                
-                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm-1"><small>Momo</small></button></div>
+                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm-1"><small><img src="img/69-691715_mtn-mm-logo-generic-mtn-mobile-money-logo-removebg-preview.png" alt="" height="25px" width="50px"></small></button></div>
 
                 <!-- Central Modal Small -->
                 <div class="modal fade" id="centralModalSm-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -481,8 +481,11 @@
                       <div class="modal-body">
                         <h6 class="text-center"><small>Name of Account:Mamani Wumpini</small></h6>
                         <h6 class="text-center"><small>Account Number:0000004555</small></h6>
-                        <br>
-                        <br>
+                        <div class="md-form pb-3">
+                          <input type="password" id="Form-conpass1" class="form-control">
+                          <label for="Form-conpass1">Enter Your Email</label>
+                        </div>
+                        <div class="text-center"><button type="button" class="btn  btn-rounded"><small>Submit</small></button></div>
                       </div>
                     </div>
                   </div>
@@ -491,35 +494,38 @@
                 </div>
                 <div class="col-md-4">
                   <!-- Button trigger modal -->
-               
-                <div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#centralModalSm"><small>Direct</small></button></div>
+              <!-- Side Modal Top Right -->
 
-                <!-- Central Modal Small -->
-                <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                  aria-hidden="true">
+<!-- Button trigger modal -->
 
-                  <!-- Change class .modal-sm to change the size of the modal -->
-                  <div class="modal-dialog modal-sm" role="document">
+<div class="text-center"><button type="button" class="btn  btn-rounded" data-toggle="modal" data-target="#sideModalTR" ><small><img src="img/151-1517832_pay-with-vodafone-cash-vodafone-mobile-money-logo-removebg-preview.png" alt="" height="25px" width="50px"></small></button></div>
 
 
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        ...
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Central Modal Small -->
+<!-- To change the direction of the modal animation change .right class -->
+<div class="modal fade right" id="sideModalTR" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+
+  <!-- Add class .modal-side and then add class .modal-top-right (or other classes from list above) to set a position to the modal -->
+  <div class="modal-dialog modal-side modal-top-right" role="document">
+
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title w-100" id="myModalLabel">Vodafone Phone</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Pay</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Side Modal Top Right -->
                 </div>
               </div>
               <br>
