@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/compiled-4.20.0.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="utf-8">
+    <meta name="description" content="
+  Sign Up with Agrivest Africa for the opportunity to invest in new farms, manage and monitor old farms. " />
+    <meta name="keywords" content=" Agrivest Africa, Grow, growth, farm, sponsorship, sponsor, sponsoring, invest, investing, farming,
+  crop, africa, ghana, nigeria, india, agriculture, green technology " />
+    <meta name="subject" content="Agrivest Africa">
+    <meta name="copyright" content="Agrivest Africa">
+    <link rel="shortcut icon" href="img/cocoa-pods-with-cocoa-leaf-white_41471-6709.webp" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>AgriVest Africa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+       
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: #fff;
+            padding: 30px;
+            border-radius: 30px;
+        }
+
+        .img-area {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            background: var(--grey);
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .img-area .icon {
+            font-size: 100px;
+        }
+
+        .img-area h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .img-area p {
+            color: #999;
+        }
+
+        .img-area p span {
+            font-weight: 600;
+        }
+
+        .img-area img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 100;
+        }
+
+        .img-area::before {
+            content: attr(data-img);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            color: #fff;
+            font-weight: 500;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .3s ease;
+            z-index: 200;
+        }
+
+        .img-area.active:hover::before {
+            opacity: 1;
+        }
+
+        .select-image {
+            display: block;
+            width: 100%;
+            padding: 16px 0;
+            border-radius: 15px;
+            background: var(--blue);
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+
+        .select-image:hover {
+            background: var(--dark-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">Agrivest Africa</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="index.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="farmerdashboard3.html">
+                    <img src="img/woodcut-farm-scene-vector-224556.webp" alt="" srcset="" class="img-fluid"
+                        height="30px" width="30px">
+                    <span class="text"> Farm</span>
+                </a>
+            </li>
+            <li>
+                <a href="tradedashboard.html">
+                    <img src="img/trade-union-line-icon-vector-41629033.webp" alt="" class="img-fluid" height="30px"
+                        width="30px">
+                    <span class="text">Trade</span>
+                </a>
+            </li>
+            <li>
+                <a href="marketdashboard.html">
+                    <img src="img/market-inflation-line-icon-vector-41802291.webp" alt="" srcset="" class="img-fluid"
+                        height="30px" width="30px">
+                    <span class="text">Market</span>
+                </a>
+            </li>
+            <hr>
+            <li>
+                <a href="profile.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="text">My Profile</span>
+                </a>
+            </li>
+        </ul>
+        <hr>
+        <ul class="side-menu">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="#" class="nav-link">Categories</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+            <a href="#" class="notification">
+                <i class='bx bxs-bell'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="img/1.jpg">
+            </a>
+        </nav>
+        <!-- NAVBAR -->
+<main>
+    <div class="container">
+        <input type="file" id="file" accept="image/*" hidden>
+        <div class="img-area" data-img="">
+            <i class='bx bxs-cloud-upload icon'></i>
+            <h3>Upload Image</h3>
+            <p>Image size must be less than <span>2MB</span></p>
+        </div>
+        <button class="select-image">Select Image</button>
+    </div>
+ <br>
+ <br>
+
+
+  <section class="pr-1 mb-4">
+
+    <!-- Material form contact -->
+    <div class="card">
+
+        <h5 class="card-header success-color white-text text-center py-4">
+            <strong>Details</strong>
+          </h5>
+          <br>
+       <!--Section: Content-->
+       <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+
+            <!--Grid column-->
+            <div class="col-md-10">
+
+                <!-- Default form register -->
+                <form class="text-center" action="#!">
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" id="defaultRegisterFormFirstName"
+                                class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormLastName" class="form-control"
+                                placeholder="Middle name">
+                        </div>
+
+                    </div>
+
+                    <div class="form-row mb-4">
+
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormLastName" class="form-control"
+                                placeholder="Last name">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormGender" class="form-control"
+                                placeholder="Gender">
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" id="defaultRegisterFormDateOfBirth"
+                                class="form-control" placeholder="Date Of Birth">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormPhoneNumber"
+                                class="form-control" placeholder="Phone Number">
+                        </div>
+
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" id="defaultRegisterFormDateOfBirth"
+                                class="form-control" placeholder="IDcard and Number">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormNationality"
+                                class="form-control" placeholder="Nationality">
+                        </div>
+                    </div>
+
+
+                    <!-- Password -->
+                    <input type="password" id="defaultRegisterFormPassword" class="form-control"
+                        placeholder="Residential Address"
+                        aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                    <br>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" id="defaultRegisterFormDateOfBirth"
+                                class="form-control" placeholder="Email Address">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormPhoneNumber"
+                                class="form-control" placeholder="Referral Code">
+                        </div>
+                    </div>
+                    <h6 class="font-weight-bold text-center">
+                        Next Of Kin Details
+                    </h6>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" id="defaultRegisterFormDateOfBirth"
+                                class="form-control" placeholder="Name In Full">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormNationality"
+                                class="form-control" placeholder="Relation">
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <!-- First name -->
+                            <input type="text" id="defaultRegisterFormDateOfBirth"
+                                class="form-control" placeholder="Full Number">
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <input type="text" id="defaultRegisterFormNationality"
+                                class="form-control" placeholder="Residentail Address">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <button class="btn btn-rounded rgba-gradient1 ">Update Profile</button>
+                </form>
+                <!-- Default form register -->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <br>
+
+    </section>
+    <!--Section: Content-->
+        
+   </div>
+</section>
+  
+
+</main>
+
+
+<script type="text/javascript"
+    src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/bundles/4.20.0/compiled.min.js"></script>
+
+  <script type="text/javascript"
+    src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search-v4/search.min.js"></script>
+  <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
+
+    <script>
+        const selectImage = document.querySelector('.select-image');
+        const inputFile = document.querySelector('#file');
+        const imgArea = document.querySelector('.img-area');
+
+        selectImage.addEventListener('click', function () {
+            inputFile.click();
+        })
+
+        inputFile.addEventListener('change', function () {
+            const image = this.files[0]
+            if (image.size < 2000000) {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const allImg = imgArea.querySelectorAll('img');
+                    allImg.forEach(item => item.remove());
+                    const imgUrl = reader.result;
+                    const img = document.createElement('img');
+                    img.src = imgUrl;
+                    imgArea.appendChild(img);
+                    imgArea.classList.add('active');
+                    imgArea.dataset.img = image.name;
+                }
+                reader.readAsDataURL(image);
+            } else {
+                alert("Image size more than 2MB");
+            }
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
