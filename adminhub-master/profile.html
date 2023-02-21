@@ -235,149 +235,84 @@
  <br>
  <br>
 
+ <div class="row">
+    <div class="col-md-2"></div>
+    <div class=" col-md-8 mb-4">
 
-  <section class="pr-1 mb-4">
+      <section class="form-elegant">
 
-    <!-- Material form contact -->
-    <div class="card">
-
-        <h5 class="card-header success-color white-text text-center py-4">
-            <strong>Details</strong>
-          </h5>
-          <br>
-       <!--Section: Content-->
-       <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
-
-
-        <!--Grid row-->
-        <div class="row d-flex justify-content-center">
-
-            <!--Grid column-->
-            <div class="col-md-10">
-
-                <!-- Default form register -->
-                <form class="text-center" action="#!">
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <!-- First name -->
-                            <input type="text" id="defaultRegisterFormFirstName"
-                                class="form-control" placeholder="First name">
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormLastName" class="form-control"
-                                placeholder="Middle name">
-                        </div>
-
-                    </div>
-
-                    <div class="form-row mb-4">
-
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormLastName" class="form-control"
-                                placeholder="Last name">
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormGender" class="form-control"
-                                placeholder="Gender">
-                        </div>
-                    </div>
-
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <!-- First name -->
-                            <input type="text" id="defaultRegisterFormDateOfBirth"
-                                class="form-control" placeholder="Date Of Birth">
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormPhoneNumber"
-                                class="form-control" placeholder="Phone Number">
-                        </div>
-
-                    </div>
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <!-- First name -->
-                            <input type="text" id="defaultRegisterFormDateOfBirth"
-                                class="form-control" placeholder="IDcard and Number">
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormNationality"
-                                class="form-control" placeholder="Nationality">
-                        </div>
-                    </div>
-
-
-                    <!-- Password -->
-                    <input type="password" id="defaultRegisterFormPassword" class="form-control"
-                        placeholder="Residential Address"
-                        aria-describedby="defaultRegisterFormPasswordHelpBlock">
-                    <br>
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <!-- First name -->
-                            <input type="text" id="defaultRegisterFormDateOfBirth"
-                                class="form-control" placeholder="Email Address">
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormPhoneNumber"
-                                class="form-control" placeholder="Referral Code">
-                        </div>
-                    </div>
-                    <h6 class="font-weight-bold text-center">
-                        Next Of Kin Details
-                    </h6>
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <!-- First name -->
-                            <input type="text" id="defaultRegisterFormDateOfBirth"
-                                class="form-control" placeholder="Name In Full">
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormNationality"
-                                class="form-control" placeholder="Relation">
-                        </div>
-                    </div>
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <!-- First name -->
-                            <input type="text" id="defaultRegisterFormDateOfBirth"
-                                class="form-control" placeholder="Full Number">
-                        </div>
-                        <div class="col">
-                            <!-- Last name -->
-                            <input type="text" id="defaultRegisterFormNationality"
-                                class="form-control" placeholder="Residentail Address">
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <button class="btn btn-rounded rgba-gradient1 ">Update Profile</button>
-                </form>
-                <!-- Default form register -->
-
+        <!--Form without header-->
+        <div class="card z-depth-4">
+          <div class="card-body mx-6">
+            <div class="bg-white  rounded-5 ">
             </div>
-            <!--Grid column-->
+            <br>
+            <!--Body-->
+            <div class="md-form">
+              <input type="text" id="Form-FullName" class="form-control">
+              <label for="Form-FullName">Your Full Name</label>
+            </div>
 
+            <div class="md-form mb-5">
+              <input type="email" id="defaultForm-email" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="defaultForm-email">Your
+                email</label>
+            </div>
+
+            <div class="md-form pb-3">
+              <input type="text" id="Form-Phone" class="form-control">
+              <label for="Form-Phone">Phone Number</label>
+            </div>
+            <div class="md-form pb-3">
+              <input type="password" id="Form-pass2" class="form-control">
+              <label for="Form-pass2">Date Of Birth</label>
+            </div>
+            <div class="md-form pb-3">
+              <input type="password" id="Form-conpass3" class="form-control">
+              <label for="Form-conpass3">Nationality</label>
+            </div>
+            <div class="md-form pb-3">
+                <input type="password" id="Form-conpass4" class="form-control">
+                <label for="Form-conpass4">Id Card Number</label>
+              </div>
+              <div class="md-form pb-3">
+                <input type="password" id="Form-conpass5" class="form-control">
+                <label for="Form-conpass5">Residential Address</label>
+              </div>
+
+              <p><center>Next Of Kin Details</center></p>
+              <div class="md-form pb-3">
+                <input type="text" id="Form-conpass9" class="form-control">
+                <label for="Form-conpass9">Name In full</label>
+              </div>
+              <div class="md-form pb-3">
+                <input type="password" id="Form-pass6" class="form-control">
+                <label for="Form-pass6">Relation</label>
+              </div>
+              <div class="md-form pb-3">
+                <input type="password" id="Form-conpass7" class="form-control">
+                <label for="Form-conpass7">Full Number</label>
+              </div>
+              <div class="md-form pb-3">
+                  <input type="password" id="Form-conpass8" class="form-control">
+                  <label for="Form-conpass8">Residential Address</label>
+                </div>
+           
+            <div class="text-center">
+              <button type="button" class="btn green btn-block btn-rounded   white-text">Update Profile</button>
+            </div>
+          </div>
         </div>
-        <!--Grid row-->
+        <!--/Form without header-->
 
-        <br>
+      </section>
 
-    </section>
-    <!--Section: Content-->
-        
-   </div>
-</section>
-  
+    </div>
+    <div class="col-md-2"></div>
+  </div>
 
-</main>
+
+
 
 
 <script type="text/javascript"
